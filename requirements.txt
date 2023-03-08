@@ -1,6 +1,0 @@
-numba
-scipy
-pydantic
-faiss
-tika
-fitz

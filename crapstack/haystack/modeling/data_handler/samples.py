@@ -2,7 +2,7 @@ from typing import Any, Union, Optional, List, Dict
 
 import logging
 import numpy as np
-from haystack.modeling.visual import SAMPLE
+from crapstack.haystack.modeling.visual import SAMPLE
 
 
 logger = logging.getLogger(__name__)
