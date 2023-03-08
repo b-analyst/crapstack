@@ -205,7 +205,7 @@ class AdaptiveModel(nn.Module, BaseAdaptiveModel):
         self.fit_heads_to_lm()
         self.dropout = nn.Dropout(embeds_dropout_prob)
         self.lm_output_types = [lm_output_types] if isinstance(lm_output_types, str) else lm_output_types
-        self.log_params()
+        # self.log_params()
         # default loss aggregation function is a simple sum (without using any of the optional params)
         if not loss_aggregation_fn:
             loss_aggregation_fn = loss_per_head_sum
@@ -564,6 +564,7 @@ class AdaptiveModel(nn.Module, BaseAdaptiveModel):
             pooled_output = None  # not available in earlier layers
             self.language_model.disable_hidden_states_output()
         return sequence_output, pooled_output
+    
 
 
     def verify_vocab_size(self, vocab_size: int):
