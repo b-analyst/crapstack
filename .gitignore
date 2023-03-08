@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+faiss_document_store.db
