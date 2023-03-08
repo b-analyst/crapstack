@@ -9,7 +9,7 @@ setup(
       'fitz',
       'mmh3',
       'pydantic',
-      "faiss-cpu",
+      "faiss-cpu==1.7.2",
       'sqlalchemy',
       'nltk',
       'more-itertools',
