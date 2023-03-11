@@ -35,7 +35,6 @@ scikit-learn>=1.0.0,
 
 # Metrics and logging
 seqeval,
-mlflow,
 
 # Elasticsearch
 elasticsearch>=7.7,<8,
